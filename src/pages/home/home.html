@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      FourSquare Populer Mekanlar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div id="map_canvas">
+    <ion-item >
+      <ion-label>Category</ion-label>
+      <ion-select [(ngModel)]="categoryId">
+        <ion-option value="4d4b7105d754a06374d81259">Yemek</ion-option>
+        <ion-option value="4bf58dd8d48988d17f941735">Sinema</ion-option>
+        <ion-option value="4bf58dd8d48988d181941735">Müze</ion-option>
+        <ion-option value="4d4b7105d754a06372d81259">Universite</ion-option>
+        <ion-option value="4d4b7105d754a06373d81259">Etkinlik</ion-option>
+        <ion-option value="4bf58dd8d48988d1fa931735">Otel</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item >
+      <ion-label>Mekan sayısı</ion-label>
+      <ion-select [(ngModel)]="venue_number">
+        <ion-option value="1">1</ion-option>
+        <ion-option value="5">5</ion-option>
+        <ion-option value="10">10</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Yarı çap</ion-label>
+      <ion-select [(ngModel)]="radius">
+        <ion-option value=100>100 m</ion-option>
+        <ion-option value=200>200 m</ion-option>
+        <ion-option value=500>500 m</ion-option>
+        <ion-option value=1000>1000 m</ion-option>
+        <ion-option value=5000>5000 m</ion-option>
+      </ion-select>
+    </ion-item>
+    <button ion-button (click)="search()">Ara</button>
+  </div>
+
+</ion-content>

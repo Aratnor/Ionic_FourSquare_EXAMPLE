@@ -1,0 +1,7 @@
+{
+  "name": "FourtSquare",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
